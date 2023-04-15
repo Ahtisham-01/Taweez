@@ -25,3 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.background-dashboard {
+  background-image: url("https://tuk-cdn.s3.amazonaws.com/can-uploader/analyticWelcomebg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
