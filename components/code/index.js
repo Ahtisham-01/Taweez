@@ -107,25 +107,46 @@ const index = () => {
         {code.map((item) => {
           return (
             <>
-            <div className="bg-black">
-
-            <h1 className="font-bold text-2xl text-stone-100">
-                {item.title}
-            </h1>
-            </div>
-            <CodeEditor
-              value={item.code}
-              language="js"
-              placeholder="Please enter JS code."
-              onChange={(evn) => setCode(evn.target.value)}
-              padding={15}
-              style={{
-                fontSize: 12,
-                backgroundColor: "#f5f5f5",
-                fontFamily:
-                  "ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace",
-              }}
-            />
+              <div className="bg-black w-full">
+               
+                <div class=" rounded overflow-hidden shadow-lg w-full">
+                  <img
+                    class="w-full"
+                    src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGV8ZW58MHx8MHx8&w=1000&q=80"
+                    alt="Sunset in the mountains"
+                  />
+                  <div class="px-6 py-4 w-full" >
+                    <div class="font-bold text-2xl text-white mb-2">  {item.title}</div>
+                    <p class="text-gray-700 text-base w-full">
+                    <CodeEditor
+                value={item.code}
+                language="js"
+                placeholder="Please enter JS code."
+                onChange={(evn) => setCode(evn.target.value)}
+                padding={15}
+                style={{
+                  fontSize: 12,
+                  backgroundColor: "#f5f5f5",
+                  fontFamily:
+                    "ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace",
+                }}
+              />
+                    </p>
+                  </div>
+                  <div class="px-6 pt-4 pb-2">
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                      #photography
+                    </span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                      #travel
+                    </span>
+                    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                      #winter
+                    </span>
+                  </div>
+                </div>
+              </div>
+              
             </>
           );
         })}
