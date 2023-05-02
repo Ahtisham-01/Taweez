@@ -3,16 +3,16 @@ import Navigation from "../reusableUi/navigation"
 
 const Index = ({ children, nav }) => {
     return (
-        <section className="flex w-full justify-between relative">
-            <Navigation nav={nav} />
+        <section className="flex w-full justify-between relative bg-white">
+            {/* <Navigation nav={nav} /> */}
             <main
                 className={`${
                     nav && ""
-                } max-w-[1180px] w-full main-section  bg-[#E5E5E5] `}
+                }  w-full main-section m-auto  bg-white `}
             >
                 <div className="w-full mx-auto">{children}</div>
             </main>
-            <style>
+            {/* <style>
                 {`
 				@media screen and (min-width: 900px) {
 					.main-section {
@@ -20,7 +20,7 @@ const Index = ({ children, nav }) => {
 					}
 				} 
 				`}
-            </style>
+            </style> */}
         </section>
     )
 }

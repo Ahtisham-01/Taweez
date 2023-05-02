@@ -23,7 +23,7 @@ export default function Home() {
               <div className="inline-flex items-center w-full background-dashboard mb-[28px]  justify-start  h-[96px] p-5 rounded-xl">
                 <div className="inline-flex flex-col space-y-4 items-start justify-start">
                   <p className="text-2xl font-extrabold leading-normal text-white">
-                    Welcome to TAWEEZ
+                    Welcome to TAWEEZ  
                   </p>
                   <p className="text-base font-medium leading-none f-f-m text-gray-50 text-opacity-60">
                     Get an Overview of all the stats from this page

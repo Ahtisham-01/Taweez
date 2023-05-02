@@ -1,43 +1,75 @@
-import Link from "next/link"
-import React from "react"
-const Index=({ title })=> {
-    return (
-        <>
-            <div className="flex justify-between sticky top-0 z-[10] items-center border-b bg-white border-[#E4E4E7] py-5 px-6">
-                {
-                    title !== "page"
-                        ?
-                        <p className="text-black text-2xl leading-6 font-extrabold manrope_font -tracking-[0.03em]">
-                            {title}
-                        </p>
-                        :
-                        <div className="flex items-center gap-4">
-                            <Link href={"/tickets"} passHref>
-                                <button className="flex items-center gap-2 leading-5 text-zinc-900 font-medium">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="icon icon-tabler icon-tabler-backspace"
-                                        width={22}
-                                        height={22}
-                                        viewBox="0 0 24 24"
-                                        strokeWidth="1.5"
-                                        stroke="currentColor"
-                                        fill="none"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    >
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M20 6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-11l-5 -5a1.5 1.5 0 0 1 0 -2l5 -5z" />
-                                        <path d="M12 10l4 4m0 -4l-4 4" />
-                                    </svg>
-                                    Back
-                                </button>
-                            </Link>
-                        </div>
-                }
-               
-            </div>
-        </>
-    )
-}
-export default Index
+import Link from "next/link";
+import React from "react";
+const Index = ({ title }) => {
+  return (
+    <div className="py-4 w-full flex justify-center flex-col items-center">
+      <div className="f-a-l py-4 font-thin text-xl tracking-[0.3em] text-neutral-600">
+        EVERYTHING IS PROFESSIONAL. INCLUDING THIS.
+      </div>
+      <div className="f-a-l font-bold text-9xl tracking-wider text-neutral-700 pt-8">
+        Train of mind
+      </div>
+
+      <div className="border-b border-neutral-600 w-[98%] pt-12" />
+      <div className="flex justify-start w-full max-w-[960px] m-auto">
+        {" "}
+        <button
+          class="btn2 border-l border-b  border-r py-7 !px-20 f-a-l border-neutral-600 relative    overflow-hidden "
+          type="button"
+        >
+          <span class="absolute inset-0 bg-neutral-400"></span>
+          <span class="absolute inset-0 flex justify-center items-center hover:text-white f-a-l">
+            Home
+          </span>
+        </button>
+        <button
+          class="btn2 border-b border-r py-7 px-20 f-a-l border-neutral-600 relative    overflow-hidden "
+          type="button"
+        >
+          <span class="absolute inset-0 bg-neutral-400"></span>
+          <span class="absolute inset-0 flex justify-center items-center hover:text-white f-a-l">
+            About
+          </span>
+        </button>
+        <button
+          class="btn2 border-b  py-3 px-20 f-a-l border-neutral-600 relative    overflow-hidden "
+          type="button"
+        >
+          <span class="absolute inset-0 bg-neutral-400"></span>
+          <span class="absolute inset-0 flex justify-center items-center hover:text-white f-a-l">
+          Our Collection
+          </span>
+        </button>
+        <button
+          class="btn2  border-b  border-l py-3 px-20 f-a-l border-neutral-600 relative    overflow-hidden "
+          type="button"
+        >
+          <span class="absolute inset-0 bg-neutral-400"></span>
+          <span class="absolute inset-0 flex justify-center items-center hover:text-white f-a-l">
+          Contribute
+          </span>
+        </button>
+        <button
+          class="btn2 border-l border-r border-b  py-3 px-20 f-a-l  border-neutral-600 relative    overflow-hidden "
+          type="button"
+        >
+          <span class="absolute inset-0 bg-neutral-400"></span>
+          <span class="absolute inset-0 flex justify-center items-center hover:text-white f-a-l">
+          Search
+          </span>
+        </button>
+        <button
+          class="btn2 border-b border-r py-3 px-20 f-a-l border-neutral-600 relative    overflow-hidden "
+          type="button"
+        >
+          <span class="absolute inset-0 bg-neutral-400"></span>
+          <span class="absolute inset-0 flex justify-center items-center hover:text-white f-a-l">
+          Contact
+          </span>
+        </button>
+
+      </div>
+    </div>
+  );
+};
+export default Index;
